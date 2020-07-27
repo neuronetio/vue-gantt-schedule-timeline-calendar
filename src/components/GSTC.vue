@@ -22,11 +22,7 @@ export default {
       "config",
       config => {
         state.update("config", current => {
-          if (current !== config) {
-            return GSTC.api.stateFromConfig(config).data.config;
-          } else {
-            return current;
-          }
+          return GSTC.api.stateFromConfig(config).data.config;
         });
       },
       { deep: true }
