@@ -23,7 +23,7 @@ export default {
       config => {
         state.update("config", current => {
           if (current !== config) {
-            return GSTC.api.mergeDeep({}, current, config);
+            return GSTC.api.stateFromConfig(config).data.config;
           } else {
             return current;
           }
