@@ -21,7 +21,7 @@ Documentation can be found on original component page at [gantt-schedule-timelin
 ```vue
 <template>
   <div id="app">
-    <GSTC :config="config" @state="onState" />
+    <GSTC :config="config" @state="onState" @ready="onReady"/>
   </div>
 </template>
 
@@ -143,6 +143,10 @@ export default {
           console.log("row 1 changed", row);
         })
       );
+    },
+    onReady(gstc) {
+      const date = gstc.api.time.date().valueOf();
+      gstc.api.scrollToTime(date);
     }
   },
   mounted() {

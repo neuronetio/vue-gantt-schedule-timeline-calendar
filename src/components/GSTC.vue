@@ -18,6 +18,7 @@ export default {
       element: this.$refs.gstc,
       state
     });
+    this.$emit('ready', gstc);
     this.$watch(
       "config",
       config => {

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <GSTC :config="config" @state="onState" />
+    <GSTC :config="config" @state="onState" @ready="onReady"/>
   </div>
 </template>
 
@@ -122,6 +122,10 @@ export default {
           console.log("row 1 changed", row);
         })
       );
+    },
+    onReady(gstc) {
+      const date = gstc.api.time.date().valueOf();
+      gstc.api.scrollToTime(date);
     }
   },
   mounted() {
