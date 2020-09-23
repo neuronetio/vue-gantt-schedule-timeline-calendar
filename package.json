@@ -3,6 +3,8 @@
   "version": "3.0.36",
   "private": false,
   "main": "src/components/GSTC.vue",
+  "author": "NEURONET - Rafal Pospiech <neuronet.io@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
