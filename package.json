@@ -11,7 +11,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "gantt-schedule-timeline-calendar": "^3.0.45",
+    "gantt-schedule-timeline-calendar": "^3.0.54",
     "vue": "^3.0.0"
   },
   "devDependencies": {
