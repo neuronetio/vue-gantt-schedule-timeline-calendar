@@ -1,6 +1,6 @@
 {
   "name": "vue-gantt-schedule-timeline-calendar",
-  "version": "3.0.40",
+  "version": "3.0.41",
   "private": false,
   "main": "src/components/GSTC.vue",
   "author": "NEURONET - Rafal Pospiech <neuronet.io@gmail.com>",
